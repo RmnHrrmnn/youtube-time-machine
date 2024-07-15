@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Time-Machine",
+  "version": "1.14",
+  "description": "Search YouTube videos uploaded within a specific date range with thumbnails.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://www.googleapis.com/"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
